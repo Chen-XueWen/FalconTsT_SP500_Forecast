@@ -15,7 +15,6 @@ This script downloads S&P 500 daily data, fits a few simple baselines, and runs 
 
 ### Horizon 1 day
 
-```markdown
 | Model          | MAE      | MSE         | RMSE     | MAPE%  |
 |----------------|----------|-------------|----------|--------|
 | Falcon-TST     | 490.1231 | 367,317.7885| 606.0675 | 8.0643 |
@@ -28,7 +27,6 @@ This script downloads S&P 500 daily data, fits a few simple baselines, and runs 
 
 ### Horizon 5 days
 
-```markdown
 | Model          | MAE      | MSE         | RMSE     | MAPE%  |
 |----------------|----------|-------------|----------|--------|
 | Falcon-TST     | 508.9289 | 395,586.2408| 628.9565 | 8.3629 |
@@ -41,7 +39,6 @@ This script downloads S&P 500 daily data, fits a few simple baselines, and runs 
 
 ### Horizon 10 days
 
-```markdown
 | Model          | MAE      | MSE         | RMSE     | MAPE%  |
 |----------------|----------|-------------|----------|--------|
 | Falcon-TST     | 498.0493 | 376,021.1484| 613.2056 | 8.1852 |
@@ -54,7 +51,6 @@ This script downloads S&P 500 daily data, fits a few simple baselines, and runs 
 
 ### Horizon 20 days
 
-```markdown
 | Model          | MAE      | MSE         | RMSE     | MAPE%  |
 |----------------|----------|-------------|----------|--------|
 | Falcon-TST     | 495.0069 | 370,717.5058| 608.8658 | 8.1082 |
