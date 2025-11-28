@@ -10,6 +10,61 @@ This script downloads S&P 500 daily data, fits a few simple baselines, and runs 
   - Moving Average, ARIMA, and GARCH baselines.
 - Evaluates metrics for each horizon and saves a 4-panel plot at `sp500_falcon_forecast.png` (2024 history + 2025 forecasts).
 
+## Experimental Results
+
+
+### Horizon 1 day
+
+```markdown
+| Model          | MAE      | MSE         | RMSE     | MAPE%  |
+|----------------|----------|-------------|----------|--------|
+| Falcon-TST     | 490.1231 | 367,317.7885| 606.0675 | 8.0643 |
+| Moving Average | 493.2862 | 372,597.5053| 610.4077 | 8.1000 |
+| ARIMA          | 497.2487 | 379,735.4557| 616.2268 | 8.1733 |
+| GARCH          | 497.4448 | 379,941.8820| 616.3943 | 8.1782 |
+```
+
+---
+
+### Horizon 5 days
+
+```markdown
+| Model          | MAE      | MSE         | RMSE     | MAPE%  |
+|----------------|----------|-------------|----------|--------|
+| Falcon-TST     | 508.9289 | 395,586.2408| 628.9565 | 8.3629 |
+| Moving Average | 491.6399 | 369,765.5994| 608.0835 | 8.0680 |
+| ARIMA          | 501.2288 | 386,329.9360| 621.5545 | 8.2385 |
+| GARCH          | 501.7832 | 387,397.9526| 622.4130 | 8.2535 |
+```
+
+---
+
+### Horizon 10 days
+
+```markdown
+| Model          | MAE      | MSE         | RMSE     | MAPE%  |
+|----------------|----------|-------------|----------|--------|
+| Falcon-TST     | 498.0493 | 376,021.1484| 613.2056 | 8.1852 |
+| Moving Average | 490.9558 | 367,846.4516| 606.5035 | 8.0454 |
+| ARIMA          | 488.1131 | 363,371.4831| 602.8030 | 8.0288 |
+| GARCH          | 488.4643 | 363,693.2718| 603.0699 | 8.0459 |
+```
+
+---
+
+### Horizon 20 days
+
+```markdown
+| Model          | MAE      | MSE         | RMSE     | MAPE%  |
+|----------------|----------|-------------|----------|--------|
+| Falcon-TST     | 495.0069 | 370,717.5058| 608.8658 | 8.1082 |
+| Moving Average | 466.8213 | 332,509.4500| 576.6363 | 7.6444 |
+| ARIMA          | 477.8699 | 348,227.8984| 590.1084 | 7.8594 |
+| GARCH          | 482.9414 | 355,615.4531| 596.3350 | 7.9575 |
+```
+
+
+
 ## Requirements
 - Python 3.8+
 - See `requirements.txt` for Python packages.
